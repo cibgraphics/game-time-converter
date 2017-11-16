@@ -33,33 +33,38 @@
   <body>
 
     <div class="container">
-
-      <header class="site-masthead">
-
-        <div class="site-logo"><a href="#">Vanilla 5</a></div>
-
-        <nav>
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </nav>
-
-      </header><!-- End site-masthead-->
-
-      <section class="content">
-
-        <div class="block-content clear-fix"></div>
-
-      </section><!-- End .content -->
-
-      <footer class="site-footer">
-        <p></p>
-      </footer><!-- End .site-footer-->
-
-    </div><!-- End .container -->
+      <h1>Game Time Converter</h1>
+      <div class="field-group">
+        <div class="field">
+          <label>Period Length</label>
+          <select class="base">
+            <option value="10">10 Minutes</option>
+            <option value="11">11 Minutes</option>
+            <option value="12">12 Minutes</option>
+            <option value="13">13 Minutes</option>
+            <option value="14">14 Minutes</option>
+            <option value="15">15 Minutes</option>
+            <option value="16">16 Minutes</option>
+            <option value="17">17 Minutes</option>
+            <option value="18">18 Minutes</option>
+            <option value="19">19 Minutes</option>
+            <option value="20">20 Minutes</option>
+          </select>
+        </div>
+      </div>
+      <div class="field-group">
+        <div class="field">
+          <label>Your Time</label>
+          <input class="minutes" type="number" min="0" max="60" value="0"/>: 
+          <input class="seconds" type="number" min="0" max="60" value="0"/>
+        </div>
+      </div>
+      <hr/>
+      <p>Time is</p>
+      <p>
+        <time></time>
+      </p>
+    </div>
 
     <!-- Load jQuery from CDN. If CDN is not available, load from local copy -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -67,8 +72,5 @@
 
     <!-- Custom JS -->
     <script src="assets/js/app.js"></script>
-
-    <!-- Google Anayltics - Modify to enter your tracking code -->
-    <script src="assets/js/lib/google-analytics.js"></script>
   </body>
 </html>

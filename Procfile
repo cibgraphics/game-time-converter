@@ -1,1 +1,1 @@
-web: node index.html
+web: harp server --port $PORT

@@ -1,0 +1,510 @@
+/*
+-----------------------------------------
+NORMALIZE
+-----------------------------------------
+*/
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+
+Added reset by Christopher Bishop
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+
+/* Tell the browser to render HTML 5 elements as block */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a:focus {
+  outline: none; /* Removes dotted outline caused by FireFox */
+}
+
+img {
+  border: none; /* Removes purple border caused by FireFox */
+}
+
+/* Clear Div (not suggested) */
+.clear {
+  clear: both;
+}
+
+/* Clear Fix */
+.clear-fix:before,
+.clear-fix:after {
+  content: " ";
+  display: table;
+}
+
+.clear-fix:after {
+  clear: both;
+}
+
+.clear-fix {
+  *zoom: 1;
+}
+
+
+/*
+-----------------------------------------
+Background Highlights
+-----------------------------------------
+*/
+
+::-moz-selection{
+  background: ;
+  color: ;
+}
+::selection {
+  background: ;
+  color: ;
+}
+
+
+
+/*
+-----------------------------------------
+HEAD TAGS
+-----------------------------------------
+*/
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  /* Prevents webpage zooming for mobile devices change orientation */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 62.5%; /* 1em = 10px */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body {
+
+}
+
+
+
+/*
+-----------------------------------------
+GENERICS
+-----------------------------------------
+*/
+
+img {
+  max-width: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+
+/*
+-----------------------------------------
+MOBILE ADJUSTMENTS
+-----------------------------------------
+*/
+
+
+a:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, .2);
+}
+
+
+
+/*
+-----------------------------------------
+LAYOUT
+-----------------------------------------
+*/
+
+main {
+
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.block-content {
+  margin-bottom: 20px;
+}
+
+
+
+/*
+-----------------------------------------
+Fonts
+-----------------------------------------
+*/
+
+
+
+
+/*
+-----------------------------------------
+TYPOGRAPHY
+-----------------------------------------
+*/
+
+
+
+a {
+  color: ;
+}
+
+a:hover {
+  color: ;
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.4em;
+  color: ;
+  margin-bottom: 1.2em;
+}
+
+blockquote {
+
+}
+
+hr {
+
+}
+
+
+
+/*
+-----------------------------------------
+BUTTONS
+-----------------------------------------
+*/
+
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  -webkit-appearance: none;
+}
+
+.button:hover {
+
+}
+
+
+
+/*
+-----------------------------------------
+TABLES
+-----------------------------------------
+*/
+
+
+table {
+
+}
+
+thead {
+
+}
+
+tfoot {
+
+}
+
+tbody {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+.cell5  {width:5%;}
+.cell10 {width:10%;}
+.cell15 {width:15%;}
+.cell20 {width:20%;}
+.cell25 {width:25%;}
+.cell30 {width:30%;}
+.cell35 {width:35%;}
+.cell40 {width:40%;}
+.cell45 {width:45%;}
+.cell50 {width:50%;}
+.cell55 {width:55%;}
+.cell60 {width:60%;}
+.cell65 {width:65%;}
+.cell70 {width:70%;}
+.cell75 {width:75%;}
+.cell80 {width:80%;}
+.cell85 {width:85%;}
+.cell90 {width:90%;}
+.cell95 {width:95%;}
+
+
+
+/*
+-----------------------------------------
+FORMS
+-----------------------------------------
+*/
+
+form {
+  margin: 10px 0;
+}
+
+label {
+
+}
+
+input {
+
+}
+
+textarea {
+
+}
+
+select {
+
+}
+
+option {
+
+}
+
+input[type="submit"] {
+
+}
+
+::-webkit-input-placeholder { color: #ddd; }
+::-moz-placeholder { color: #ddd; }
+:-ms-input-placeholder { color: #ddd; }
+input:-moz-placeholder { color: #ddd; }
+
+
+
+/*
+-----------------------------------------
+MASTHEAD
+-----------------------------------------
+*/
+
+
+.site-masthead {
+
+}
+
+
+
+/*
+-----------------------------------------
+FOOTER
+-----------------------------------------
+*/
+
+
+.site-footer {
+
+}
+
+
+/*
+-----------------------------------------
+MODULES
+-----------------------------------------
+*/
+
+
+
+/*
+-----------------------------------------
+VENDOR
+-----------------------------------------
+*/
+
+
+
+/*
+-----------------------------------------
+VENDOR OVERRIDES
+-----------------------------------------
+*/
+
+
+
+/*
+-----------------------------------------
+Responsive Web Design Queries
+-----------------------------------------
+*/
+
+@media only screen and (min-width: 1382px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .layout-stack-tablet {
+    float: none !important;
+    width: auto !important;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .layout-stack-mobile {
+    float: none !important;
+    width: auto !important;
+  }
+
+}

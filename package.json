@@ -1,7 +1,7 @@
 {
-  "name": "my-project-name",
+  "name": "game-time-converter",
   "version": "0.1.0",
-  "devDependencies": {
-
+  "dependencies": {
+    "harp": "*"
   }
 }

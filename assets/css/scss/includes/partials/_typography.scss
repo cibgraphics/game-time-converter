@@ -29,7 +29,9 @@ blockquote {
 }
 
 hr {
-
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
@@ -38,4 +40,11 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   color: $text-color;
   line-height: 1.4em;
+}
+
+h1 {
+  @include rem-size(30px);
+  text-align: center;
+  color: $primary;
+  margin-bottom: 30px;
 }

@@ -1,9 +1,4 @@
-/*
------------------------------------------
-NORMALIZE
------------------------------------------
-*/
-
+/* Bootstrapping */
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -13,7 +8,6 @@ Twitter: @rich_clark
 
 Added reset by Christopher Bishop
 */
-
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -26,147 +20,435 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
 
 body {
-  line-height:1;
-}
-
+  line-height: 1; }
 
 /* Tell the browser to render HTML 5 elements as block */
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-  display:block;
-}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
 blockquote, q {
-  quotes:none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content:'';
-  content:none;
-}
+  content: '';
+  content: none; }
 
 a {
-  margin:0;
-  padding:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
-}
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
 
 /* change colours to suit your needs */
 ins {
-  background-color:#ff9;
-  color:#000;
-  text-decoration:none;
-}
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
 
 /* change colours to suit your needs */
 mark {
-  background-color:#ff9;
-  color:#000;
-  font-style:italic;
-  font-weight:bold;
-}
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
 
 del {
-  text-decoration: line-through;
-}
+  text-decoration: line-through; }
 
 abbr[title], dfn[title] {
-  border-bottom:1px dotted;
-  cursor:help;
-}
+  border-bottom: 1px dotted;
+  cursor: help; }
 
 /* tables still need 'cellspacing="0"' in the markup */
 table {
-  border-collapse:collapse;
-  border-spacing:0;
-}
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 /* change border colour to suit your needs */
 hr {
-  display:block;
-  height:1px;
-  border:0;
-  border-top:1px solid #cccccc;
-  margin:1em 0;
-  padding:0;
-}
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
 
 input, select {
-  vertical-align:middle;
-}
+  vertical-align: middle; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 a:focus {
-  outline: none; /* Removes dotted outline caused by FireFox */
-}
+  outline: none;
+  /* Removes dotted outline caused by FireFox */ }
 
 img {
-  border: none; /* Removes purple border caused by FireFox */
-}
+  border: none;
+  /* Removes purple border caused by FireFox */ }
 
 /* Clear Div (not suggested) */
 .clear {
-  clear: both;
-}
+  clear: both; }
 
 /* Clear Fix */
-.clear-fix:before,
-.clear-fix:after {
-  content: " ";
-  display: table;
-}
-
-.clear-fix:after {
-  clear: both;
-}
-
 .clear-fix {
-  *zoom: 1;
-}
+  *zoom: 1; }
+  .clear-fix:before, .clear-fix:after {
+    display: table;
+    content: ""; }
+  .clear-fix:after {
+    clear: both; }
+
+/* Partials */
+/*
+-----------------------------------------
+ANIMATION
+-----------------------------------------
+*/
+/*
+-----------------------------------------
+Background Highlights
+-----------------------------------------
+*/
+::-moz-selection {
+  background: tomato;
+  color: #fff; }
+
+::selection {
+  background: tomato;
+  color: #fff; }
+
+/*
+-----------------------------------------
+HEAD TAGS
+-----------------------------------------
+*/
+* {
+  box-sizing: border-box; }
+
+html {
+  /* Prevents webpage zooming for mobile devices change orientation */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 14px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
 
 body {
-  padding: 20px;
   background: tomato;
-  text-align: center;
-  color: #fff;
-}
+  height: 100vh; }
 
+/*
+-----------------------------------------
+GENERICS
+-----------------------------------------
+*/
+img {
+  max-width: 100%; }
+
+.relative {
+  position: relative; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.italic {
+  font-style: italic; }
+
+.bold {
+  font-weight: bold; }
+
+/*
+-----------------------------------------
+MOBILE ADJUSTMENTS
+-----------------------------------------
+*/
+a:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2); }
+
+/*
+-----------------------------------------
+LAYOUT
+-----------------------------------------
+*/
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-}
+  padding: 20px;
+  height: 100%; }
 
-h1 {
-  color: #fff;
-  text-align: center;
-}
+.content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100%; }
+
+.block-content {
+  margin-bottom: 20px; }
+
+.app {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  position: relative;
+  padding: 30px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px; }
+
+/*
+-----------------------------------------
+Fonts
+-----------------------------------------
+*/
+/*
+-----------------------------------------
+TYPOGRAPHY
+-----------------------------------------
+*/
+/*  Basics */
+a {
+  color: tomato;
+  transition: all 0.2s linear;
+  text-decoration: none; }
+  a:hover {
+    color: #ff8e7a; }
+
+p {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.4em;
+  color: #333;
+  margin-bottom: 1.2em; }
 
 hr {
   margin: 30px 0;
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
+  border-top: 1px solid rgba(255, 255, 255, 0.3); }
 
-.field {
-  margin-bottom: 15px;
-}
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  line-height: 1.4em; }
+
+h1 {
+  font-size: 30px;
+  font-size: 2.1428571429rem;
+  text-align: center;
+  color: tomato;
+  margin-bottom: 30px; }
+
+/*
+-----------------------------------------
+BUTTONS
+-----------------------------------------
+*/
+.button {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  -webkit-appearance: none; }
+
+/*
+-----------------------------------------
+TABLES
+-----------------------------------------
+*/
+.cell5 {
+  width: 5%; }
+
+.cell10 {
+  width: 10%; }
+
+.cell15 {
+  width: 15%; }
+
+.cell20 {
+  width: 20%; }
+
+.cell25 {
+  width: 25%; }
+
+.cell30 {
+  width: 30%; }
+
+.cell35 {
+  width: 35%; }
+
+.cell40 {
+  width: 40%; }
+
+.cell45 {
+  width: 45%; }
+
+.cell50 {
+  width: 50%; }
+
+.cell55 {
+  width: 55%; }
+
+.cell60 {
+  width: 60%; }
+
+.cell65 {
+  width: 65%; }
+
+.cell70 {
+  width: 70%; }
+
+.cell75 {
+  width: 75%; }
+
+.cell80 {
+  width: 80%; }
+
+.cell85 {
+  width: 85%; }
+
+.cell90 {
+  width: 90%; }
+
+.cell95 {
+  width: 95%; }
+
+/*
+-----------------------------------------
+FORMS
+-----------------------------------------
+*/
+form {
+  margin: 10px 0; }
 
 label {
-  margin-bottom: 5px;
-}
+  display: block;
+  font-size: 15px;
+  font-size: 1.0714285714rem;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.4em; }
+
+input, textarea {
+  width: 100%;
+  border: 1px solid #b7b7b7;
+  padding: 10px;
+  font-size: 16px;
+  font-size: 1.1428571429rem;
+  color: #333;
+  border-radius: 5px; }
+  input:disabled, textarea:disabled {
+    color: #c4c4c4;
+    background: #fff; }
+
+textarea {
+  min-height: 200px; }
+  textarea.small {
+    min-height: 150px; }
+  textarea.large {
+    min-height: 250px; }
+
+select {
+  width: 100%; }
+
+::-webkit-input-placeholder {
+  color: #ddd; }
+
+::-moz-placeholder {
+  color: #ddd; }
+
+:-ms-input-placeholder {
+  color: #ddd; }
+
+input:-moz-placeholder {
+  color: #ddd; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+textarea {
+  -webkit-appearance: none; }
+
+input[type="search"] {
+  -webkit-appearance: none; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+/* Form Styles */
+.field-group {
+  *zoom: 1; }
+  .field-group:before, .field-group:after {
+    display: table;
+    content: ""; }
+  .field-group:after {
+    clear: both; }
+
+.field {
+  margin-bottom: 20px; }
+
+/* Modules */
+/*
+-----------------------------------------
+MASTHEAD
+-----------------------------------------
+*/
+.result {
+  text-align: center; }
+  .result time {
+    margin-top: 10px;
+    color: tomato;
+    font-size: 60px;
+    font-size: 4.2857142857rem; }
+
+/* Vendors */
+/*
+-----------------------------------------
+VENDOR OVERRIDES
+-----------------------------------------
+*/
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .layout-stack-tablet {
+    float: none !important;
+    width: auto !important; } }
+
+@media only screen and (max-width: 480px) {
+  .layout-stack-mobile {
+    float: none !important;
+    width: auto !important; } }

@@ -9,17 +9,29 @@ main {
 }
 
 .container {
-  padding: 0 20px;
-  background: $content-background;
+  padding: 20px;
+  height: 100%;
 }
 
 .content {
-  max-width: $site-width;
-  margin: 0 auto;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 
 .block-content {
   margin-bottom: 20px;
+}
+
+.app {
+  background: $content-background;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  margin: 0 auto;
+  position: relative;
+  padding: 30px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: $site-width;
 }

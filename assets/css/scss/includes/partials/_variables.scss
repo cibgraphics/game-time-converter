@@ -1,5 +1,5 @@
 // Max Site Width
-$site-width:                960px;
+$site-width:                600px;
 
 // Responsive widths
 $dekstop-xxlarge:           'only screen and (max-width: 1300px)';
@@ -15,19 +15,23 @@ $mobile:                    'only screen and (max-width: 480px)';
 $mobile-small:              'only screen and (max-width: 400px)';
 
 // Main Colors
-$primary:                   #;
+$primary:                   tomato;
+$grey:                      #555;
+$grey-light:                #c4c4c4;
+
+$off-white:                 #f4f4f4;
 
 // Site Background Color
-$base-color:                #;
+$base-color:                $primary;
 
 // Content Background Color
-$content-background:        #;
+$content-background:        #fff;
 
 // Text Color
-$text-color:                #;
+$text-color:                #333;
 
 // Link Colors
-$link-color:                #;
+$link-color:                $primary;
 $link-hover-light:          lighten($link-color, 10%);
 $link-hover-dark:           darken($link-color, 10%);
 
@@ -46,5 +50,5 @@ $font-size-small:           $font-size - 2;
 $font-size-large:           $font-size + 2;
 
 // User Select (colors when a user selects objects on screen)
-$select-background:         #;
-$select-text:               #;
+$select-background:         $primary;
+$select-text:               #fff;

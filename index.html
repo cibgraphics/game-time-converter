@@ -33,37 +33,43 @@
   <body>
 
     <div class="container">
-      <h1>Game Time Converter</h1>
-      <div class="field-group">
-        <div class="field">
-          <label>Period Length</label>
-          <select class="base">
-            <option value="10">10 Minutes</option>
-            <option value="11">11 Minutes</option>
-            <option value="12">12 Minutes</option>
-            <option value="13">13 Minutes</option>
-            <option value="14">14 Minutes</option>
-            <option value="15">15 Minutes</option>
-            <option value="16">16 Minutes</option>
-            <option value="17">17 Minutes</option>
-            <option value="18">18 Minutes</option>
-            <option value="19">19 Minutes</option>
-            <option value="20">20 Minutes</option>
-          </select>
+      <div class="content">
+        <div class="app">
+          <h1>Game Time Converter</h1>
+          <div class="field-group">
+            <div class="field">
+              <label>Period Length</label>
+              <select class="base">
+                <option value="10">10 Minutes</option>
+                <option value="11">11 Minutes</option>
+                <option value="12">12 Minutes</option>
+                <option value="13">13 Minutes</option>
+                <option value="14">14 Minutes</option>
+                <option value="15">15 Minutes</option>
+                <option value="16">16 Minutes</option>
+                <option value="17">17 Minutes</option>
+                <option value="18">18 Minutes</option>
+                <option value="19">19 Minutes</option>
+                <option value="20">20 Minutes</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-group">
+            <div class="field">
+              <label>Your Time</label>
+              <input class="minutes" type="number" min="0" max="60" value="0"/>: 
+              <input class="seconds" type="number" min="0" max="60" value="0"/>
+            </div>
+          </div>
+          <hr/>
+          <div class="result">
+            <p>Time is</p>
+            <p>
+              <time></time>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="field-group">
-        <div class="field">
-          <label>Your Time</label>
-          <input class="minutes" type="number" min="0" max="60" value="0"/>: 
-          <input class="seconds" type="number" min="0" max="60" value="0"/>
-        </div>
-      </div>
-      <hr/>
-      <p>Time is</p>
-      <p>
-        <time></time>
-      </p>
     </div>
 
     <!-- Load jQuery from CDN. If CDN is not available, load from local copy -->

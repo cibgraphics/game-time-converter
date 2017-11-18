@@ -1,0 +1,16 @@
+/*
+-----------------------------------------
+MASTHEAD
+-----------------------------------------
+*/
+
+
+.result {
+  text-align: center;
+
+  time {
+    margin-top: 10px;
+    color: $primary;
+    @include rem-size(60px);
+  }
+}

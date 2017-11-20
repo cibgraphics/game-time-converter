@@ -4,3 +4,68 @@ VENDOR OVERRIDES
 -----------------------------------------
 */
 
+// Uniform
+
+div.selector, div.selector span {
+  width: 100% !important;
+  background: none;
+  background-color: #fff;
+
+  .inline-input & {
+    width: auto !important;
+  }
+}
+
+$selector-height: 35px;
+
+div.selector {
+  border: 1px solid $grey-light;
+  border-radius: 5px;
+  height: $selector-height;
+  
+  span {
+    font-size: 16px;
+    color: $text-color;
+    height: $selector-height;
+    line-height: $selector-height;
+    position: relative;
+
+    &:after {
+      $arrow-size: 8px;
+
+      position: absolute;
+      top: 50%;
+      right: 7px;
+      content: '';
+      height: 0;
+      width: 0;
+      border-top: $arrow-size solid $text-color;
+      border-right: $arrow-size solid transparent;
+      border-left: $arrow-size solid transparent;
+      margin-top: -($arrow-size/2);
+    }
+  }
+  
+  select {
+    height: $selector-height;
+  }
+  
+  &.hover, &.focus, &.active, &.active.focus {
+    span {
+      &:after {
+        $arrow-size: 8px;
+
+        position: absolute;
+        top: 50%;
+        right: 7px;
+        content: '';
+        height: 0;
+        width: 0;
+        border-top: $arrow-size solid $text-color;
+        border-right: $arrow-size solid transparent;
+        border-left: $arrow-size solid transparent;
+        margin-top: -($arrow-size/2);
+      }
+    }
+  }
+}

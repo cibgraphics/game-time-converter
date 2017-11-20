@@ -9,7 +9,8 @@ MASTHEAD
   text-align: center;
 
   time {
-    margin-top: 10px;
+    display: block;
+    margin-top: 20px;
     color: $primary;
     @include rem-size(60px);
   }

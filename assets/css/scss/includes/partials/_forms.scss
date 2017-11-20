@@ -45,6 +45,8 @@ textarea {
 
 select {
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   option {
 
@@ -96,4 +98,14 @@ input[type=number] {
 
 .field {
   margin-bottom: 20px;
+}
+
+.time-input {
+  display: flex;
+  align-items: center;
+
+  .time-seperator {
+    text-align: center;
+    width: 30px;
+  }
 }

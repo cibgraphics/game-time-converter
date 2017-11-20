@@ -40,6 +40,7 @@ html {
 
 body {
   background: $base-color;
+  @include quick-gradient();
   height: 100vh;
 }
 

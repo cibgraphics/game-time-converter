@@ -119,13 +119,13 @@
 }
 
 // Quick Gradient - needs background color
-@mixin quick-gradient ($origin: top, $alpha: 0.2) {
+@mixin quick-gradient ($origin: to bottom, $alpha: 0.2) {
   background-image: -webkit-linear-gradient($origin, rgba(0,0,0,0.0) 0%, rgba(0,0,0,$alpha) 100%);
   background-image: linear-gradient($origin, rgba(0,0,0,0.0) 0%, rgba(0,0,0,$alpha) 100%);
 }
 
 // Quick White Gradient - needs background color
-@mixin quick-gradient-white ($origin: top, $alpha: 0.25) {
+@mixin quick-gradient-white ($origin: to top, $alpha: 0.25) {
   background-image: -webkit-linear-gradient(to $origin, rgba(255,255,255,$alpha) 0%, rgba(255,255,255,.0) 100%);
   background-image: linear-gradient(to $origin, rgba(255,255,255,$alpha) 0%, rgba(255,255,255,.0) 100%);
 }
